@@ -1,0 +1,284 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: rgba(111, 240, 141, 0.15);
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  min-height: 60vh;
+  background-image: url("../media/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+article {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+}
+
+p::first-letter {
+  font-size: 120%;
+}
+
+h1 {
+  padding-top: 10vh;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+  font-size: 250%;
+  font-variant: small-caps;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2::first-letter {
+  font-size: 30px;
+  color: #43a359;
+}
+
+h3::first-letter {
+  font-size: 26px;
+  color: #43a359;
+}
+
+header nav {
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  font-variant: small-caps;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+header nav a:visited {
+  color: white;
+}
+
+nav a:link {
+  color: white;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 80%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgba(111, 240, 141, 0.6);
+}
+
+figcaption {
+  font-size: 80%;
+  text-align: center;
+}
+
+hr {
+  size: 0.15rem;
+  width: 75%;
+  text-align: center;
+}
+
+dl {
+  padding: 1rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  font-style: italic;
+}
+
+input[type="email"] {
+  background-color: rgba(111, 240, 141, 0.03);
+}
+
+input[type="text"] {
+  background-color: rgba(111, 240, 141, 0.03);
+}
+
+::placeholder {
+  font-size: 90%;
+  color: gray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#kontaktformular {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.inputRadio {
+  display: block;
+}
+
+.form_buttons {
+  padding: 1rem;
+  text-align: center;
+}
+
+.formular {
+  display: flex;
+}
+
+.formular > * {
+  padding: 1rem;
+  margin: 0.4rem;
+  flex-basis: 35%;
+}
+
+.zooMain {
+  padding: 1rem;
+}
+
+#welcomeimg {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  transition: transform 3s ease;
+}
+
+#welcomeimg:hover {
+  transform: rotate(360deg);
+}
+
+#pandabild {
+  width: 20%;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+td {
+  padding: 0.2rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(111, 240, 141, 0.3);
+}
+
+#patenkinder {
+  padding: 1.5rem;
+  background: rgba(111, 240, 141, 0.15);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(111, 240, 141, 0.15) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+#lgd_patenkinder {
+  font-size: 90%;
+}
+
+.motto::before {
+  content: url("../media/koala.png");
+  position: relative;
+}
+
+.patenschaftstext::after {
+  content: url("../media/lion.png");
+  position: relative;
+}
+
+#panorama {
+  background-image: url(../media/zoopanorama.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+}
+
+#loewen {
+  background-image: url(../media/loewe.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 50vh;
+  color: white;
+}
+
+#loewen a {
+  color: white;
+}
+
+#foto_manfred {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.covid {
+  /* border: 5px solid black; */
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+.covidinfo {
+  margin: 0 auto;
+  font-size: 90%;
+  padding: 3% 0 3% 5%;
+  width: 85%;
+  text-align: left;
+  border: 3px solid #d64040;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  transition-delay: 50ms;
+}
+
+.covidinfo:hover {
+  background-color: lightcoral;
+  font-weight: bold;
+}
+
+#loewe_fred {
+  display: block;
+  margin: 0 0.2rem 0.1rem auto;
+}
+
+.covidinfo ul {
+  list-style-image: url(../media/warning.png);
+  list-style-position: outside;
+}
+
+.covidinfo li {
+  padding: 0.5rem;
+}
