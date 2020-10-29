@@ -1,143 +1,233 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: rgba(111, 240, 141, 0.15);
 }
 
 header {
-    padding: 0.15rem;
-    margin: 0;
-    text-align: center;
-    background-color: blanchedalmond;
+  padding: 0.1rem;
+  margin: 0;
+  text-align: center;
+  background: rgba(111, 240, 141, 0.6) url(../media/monkey.png) no-repeat scroll
+    14px 19px;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
 }
 
 article {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+}
+
+p::first-letter {
+  font-size: 120%;
 }
 
 h1 {
-    color:black;
+  color: black;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+  font-size: 250%;
+  font-variant: small-caps;
+}
+
+h1::first-letter {
+  font-weight: bold;
+  font-size: 120%;
+  color: #43a359;
+}
+
+h2::first-letter {
+  font-size: 30px;
+  color: #43a359;
+}
+
+h3::first-letter {
+  font-size: 26px;
+  color: #43a359;
 }
 
 nav {
-    margin: 0 auto;
-    padding: 0.15rem;
-    background-color: blanchedalmond;
+  margin: 0 auto;
+  padding: 0.1rem;
+  background-color: rgba(111, 240, 141, 0.6);
 }
 
-
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
-    padding: 2rem;
-    text-decoration: none;
-    margin: 0;
+  padding: 1.5rem;
+  text-decoration: none;
+  margin: 0;
+  font-variant: small-caps;
+  font-size: 130%;
+  font-weight: bold;
 }
 
-a:hover {
-    color: black;
+nav a:hover {
+  color: black;
+  text-decoration: underline;
 }
 
-a:visited {
-    color: black;
+nav a:visited {
+  color: black;
 }
 
-a:link {
-    color: black;
+nav a:link {
+  color: black;
 }
 
 footer {
-    margin-top: 4rem;
-    font-size: 80%;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: blanchedalmond;
+  margin-top: 4rem;
+  font-size: 80%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgba(111, 240, 141, 0.6);
 }
 
 figcaption {
-    font-size: 80%;
-    text-align: center;
+  font-size: 80%;
+  text-align: center;
 }
 
 hr {
-    size: 0.15rem;
-    width: 75%;
-    text-align: center;
+  size: 0.15rem;
+  width: 75%;
+  text-align: center;
 }
 
 dl {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 dt {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+dd {
+  font-style: italic;
+}
+
+input[type="email"] {
+  background-color: rgba(111, 240, 141, 0.03);
+}
+
+input[type="text"] {
+  background-color: rgba(111, 240, 141, 0.03);
 }
 
 ::placeholder {
-    font-size: 90%;
-    color: gray;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 90%;
+  color: gray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #kontaktformular {
-    width: 45%;
-    margin: 0 auto;
+  width: 45%;
+  margin: 0 auto;
 }
 
 .inputRadio {
-    display: block;
+  display: block;
 }
 
 .form_buttons {
-    padding: 1rem;
-    text-align: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .formular {
-    display: flex;
-
+  display: flex;
 }
 
 .formular > * {
-    padding: 1rem;
-    margin: 0.4rem;
-    flex-basis: 35%;
+  padding: 1rem;
+  margin: 0.4rem;
+  flex-basis: 35%;
 }
 
 .zooMain {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 #welcomeimg {
-    width: 40%;
-    margin: 0 auto;
-    display: block;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
 }
 
 #pandabild {
-    width: 20%;
-    padding: 1rem;
-
+  width: 20%;
+  padding: 1rem;
 }
 
 table {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 td {
-    padding: 0.2rem;
+  padding: 0.2rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(111, 240, 141, 0.3);
 }
 
 #patenkinder {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 #lgd_patenkinder {
-    font-size: 90%;
+  font-size: 90%;
+}
+
+.motto::before {
+  content: url("../media/koala.png");
+  position: relative;
+}
+
+.patenschaftstext::after {
+  content: url("../media/lion.png");
+  position: relative;
+}
+
+#panorama {
+  background-image: url(../media/zoopanorama.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+}
+
+#foto_manfred {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.covid {
+  margin: 0 auto;
+  padding: 0.8rem;
+  width: 50%;
+  text-align: left;
+  border: 3px solid #d64040;
+}
+
+.covid ul {
+  list-style-image: url(../media/warning.png);
+  list-style-position: outside;
+}
+
+.covid li {
+  padding: 0.5rem;
 }
