@@ -4,13 +4,14 @@ body {
 }
 
 header {
-  padding: 0.5rem;
+  padding: 0;
   margin: 0;
   text-align: center;
   min-height: 60vh;
   background-image: url("../media/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 header a {
@@ -31,7 +32,7 @@ p::first-letter {
 }
 
 h1 {
-  color: black;
+  padding-top: 10vh;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
   font-size: 250%;
   font-variant: small-caps;
@@ -51,38 +52,41 @@ h3::first-letter {
   color: #43a359;
 }
 
-nav {
+header nav {
   margin: 0 auto;
   padding: 0;
-  background-color: rgba(111, 240, 141, 0.6);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-nav a {
+header nav a {
   padding: 1.5rem;
   text-decoration: none;
+  color: white;
   margin: 0;
   font-variant: small-caps;
   font-size: 130%;
   font-weight: bold;
 }
 
-nav a:hover {
-  color: black;
+header nav a:hover {
+  color: white;
   text-decoration: underline;
 }
 
-nav a:visited {
-  color: black;
+header nav a:visited {
+  color: white;
 }
 
 nav a:link {
-  color: black;
+  color: white;
 }
 
 footer {
@@ -163,6 +167,11 @@ input[type="text"] {
   width: 40%;
   margin: 0 auto;
   display: block;
+  transition: transform 3s ease;
+}
+
+#welcomeimg:hover {
+  transform: rotate(360deg);
 }
 
 #pandabild {
@@ -185,6 +194,13 @@ tr:nth-child(even) {
 
 #patenkinder {
   padding: 1.5rem;
+  background: rgba(111, 240, 141, 0.15);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(111, 240, 141, 0.15) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 #lgd_patenkinder {
@@ -238,7 +254,7 @@ tr:nth-child(even) {
 .covidinfo {
   margin: 0 auto;
   font-size: 90%;
-  padding: 3% 0 3% 3%;
+  padding: 3% 0 3% 5%;
   width: 85%;
   text-align: left;
   border: 3px solid #d64040;
